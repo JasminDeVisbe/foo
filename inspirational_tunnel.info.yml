@@ -1,0 +1,9 @@
+name: 'Tunnel inspirationnel'
+type: module
+description: "Implémente les étapes du tunnel inspirationnel, tout au long de ce tunnel, l'utilisateur est guidée  pour définir ses critère de recherche."
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'
+dependencies:
+  - thematics_builder
+configure: inspirational_tunnel.backoffice

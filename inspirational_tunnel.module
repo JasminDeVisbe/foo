@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains inspirational_tunnel.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function inspirational_tunnel_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the inspirational_tunnel module.
+    case 'help.page.inspirational_tunnel':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Implémente les étapes du tunnel inspirationnel, tout au long de ce tunnel, l&#039;&#039;utilisateur est guidée  pour définir ses cri�tère de recherche.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function inspirational_tunnel_theme() {
+  return [
+    'inspirational_tunnel' => [
+      'render element' => 'children',
+    ],
+  ];
+}

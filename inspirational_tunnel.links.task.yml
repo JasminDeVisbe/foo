@@ -1,0 +1,11 @@
+inspirational_tunnel.backoffice.steps.collection:
+  route_name: inspirational_tunnel.backoffice.steps.collection  
+  title: 'Etapes'
+  base_route: inspirational_tunnel.backoffice.steps.collection
+  weight: 10
+
+inspirational_tunnel.backoffice.steps.background_image:
+  route_name: inspirational_tunnel.backoffice_image_form
+  title: 'Image de fond'
+  base_route: inspirational_tunnel.backoffice.steps.collection
+  weight: 0
