@@ -1,0 +1,40 @@
+
+####################
+# Backoffice routes.
+####################
+
+# Steps listing.
+foo.backoffice.steps.collection:
+  path: '/admin/foo/steps'
+  defaults:
+    _form: '\Drupal\foo\Form\BackofficeStepListingForm'
+    _title: 'Steps My module'
+  requirements:
+    _permission: 'administer inspirational tunnel'
+
+# Steps listing.
+foo.backoffice.steps.background_image:
+  path: '/admin/foo/steps/background_image'
+  defaults:
+    _form: '\Drupal\foo\Form\Backoffice\Step\BackgroundImageForm'
+    _title: 'Image My module'
+  requirements:
+    _permission: 'administer inspirational tunnel'
+
+# Step name editing.
+foo.backoffice.steps.canonical.edit.collection:
+  path: '/admin/foo/steps/{slug}'
+  defaults:
+    _form: '\Drupal\foo\Form\Backoffice\Step\CollectionForm'
+    _title: 'Collection My module'
+  requirements:
+    _permission: 'administer inspirational tunnel'
+
+# Step name editing.
+foo.backoffice.steps.canonical.edit.name:
+  path: '/admin/foo/steps/{slug}/edit/name'
+  defaults:
+    _form: '\Drupal\foo\Form\Backoffice\Step\NameForm'
+    _title: "Name"
+  requirements:
+    _permission: 'administer inspirational tunnel'

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\inspirational_tunnel\Form\Backoffice\Step;
+namespace Drupal\foo\Form\Backoffice\Step;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -24,7 +24,7 @@ class NameForm extends FormBase {
     $form['name'] = [
       '#type' => 'machine_name',
       '#title' => $this->t('Name'),
-      '#description' => $this->t("Nom de l'étape"),
+      '#description' => $this->t("Description"),
       '#maxlength' => 64,
       '#size' => 64,
       '#weight' => '0',

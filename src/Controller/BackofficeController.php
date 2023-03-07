@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\inspirational_tunnel\Controller;
+namespace Drupal\foo\Controller;
 
 use Drupal;
 use Drupal\Core\Controller\ControllerBase;

@@ -1,15 +1,12 @@
 <?php
 
-namespace Drupal\inspirational_tunnel\Form\Backoffice\Step;
+namespace Drupal\foo\Form\Backoffice\Step;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Renderer;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-/**
- * Allow to update the background image of the inspirational tunnel.
- */
 class BackgroundImageForm extends FormBase {
 
   /**
@@ -48,7 +45,7 @@ class BackgroundImageForm extends FormBase {
         'file_validate_is_image'      => [],
         'file_validate_extensions'    => ['gif png jpg jpeg'],
       ],
-      '#title'                => t('Télécharger une image de fond')
+      '#title'                => t('Download')
     ];
 
     $form['submit'] = [

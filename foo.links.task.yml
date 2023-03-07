@@ -1,0 +1,11 @@
+foo.backoffice.steps.collection:
+  route_name: foo.backoffice.steps.collection  
+  title: 'List'
+  base_route: foo.backoffice.steps.collection
+  weight: 10
+
+foo.backoffice.steps.background_image:
+  route_name: foo.backoffice_image_form
+  title: 'Image'
+  base_route: foo.backoffice.steps.collection
+  weight: 0

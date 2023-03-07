@@ -1,0 +1,7 @@
+name: 'My module'
+type: module
+description: ""
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'
+configure: foo.backoffice
